@@ -13,6 +13,7 @@
   --footer-logo-color: #ffffff;
   --address-color: #ffffff;
   --contact-online: rgba(255, 255, 255, 0.6);
+  --buttom-accent-color: #2196f3;
 }
 
 p,
@@ -80,7 +81,6 @@ body {
 /*---------------HEADER----------------*/
 
 .header {
-  background-color: #e5e5e5;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -185,22 +185,23 @@ body {
 
 .hero-button {
   margin-top: 30px;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
   align-items: center;
   text-align: center;
 }
 
 /*------------features----------------*/
 
+.features {
+  align-items: center;
+}
+
 .features-container {
   display: flex;
-  align-items: center;
 }
 
 .features-list {
   display: flex;
+  margin-left: 30px;
 }
 
 .features-item:not(:last-child) {
@@ -249,6 +250,8 @@ body {
 
 .team {
   background-color: #f5f4fa;
+  text-align: center;
+  align-items: center;
 }
 
 .team-title {
@@ -270,6 +273,11 @@ body {
 .team-item {
   flex-basis: calc(100% / 4 - 30px);
   margin: 15px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .team-second-title {
@@ -288,6 +296,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 10px;
 }
 
 .team-item-bottom {
@@ -299,6 +308,8 @@ body {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -308,6 +319,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--footer-logo-color);
+  margin-bottom: 20px;
 }
 
 .contact-link {
@@ -316,6 +328,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--address-color);
+}
+
+.contact-list:not :last-child {
+  margin-bottom: 9px;
 }
 
 .contact-online {
@@ -335,18 +351,42 @@ body {
 
 /*------------Gallery--------------*/
 
+.gallery-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.gallery-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
+}
+
+.buttom-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+
 .gallery-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-button-color);
   font-family: inherit;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-right: 8px;
 }
 .gallery-btn:hover,
 .gallery-btn:focus {
-  color: var(--main-button-color);
+  color: var(--buttom-accent-color);
 }
 
 .gallery-title {
